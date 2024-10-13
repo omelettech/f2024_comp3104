@@ -5,6 +5,7 @@ import StudentList from "./components/StudentList";
 import img1 from "./img/1.png"
 import img2 from "./img/2.png"
 import img3 from "./img/3.png"
+import logo from "./img/logo.png"
 const files = [img1, img2, img3]
  const getImageSource = () => {
         let rand = Math.floor(Math.random() * files.length);
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <div className="App">
+        <img style={{width:300,height:300}} src={logo} alt={"weird cat drawing"}/>
       <h1>Student Information System</h1>
       <h5>Developed By: 101400761 || Awsaf Fida Mahmud || DevOps</h5>
       <StudentForm addStudent={addStudent} />
